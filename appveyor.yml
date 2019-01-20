@@ -121,9 +121,17 @@ install:
 before_build:
   - nuget restore         # Restore NuGet packages.
   - ps: |
-      $env:ARTIFACT_NAME="$($env:ORGANIZATION_CANONICAL_NAME.tolower())-$($env:PACKAGE_CANONICAL_NAME.tolower())-$($env:configuration.tolower())-$($env:platform.tolower())"
+      if (Test-Path env:version) {
+        $env:ARTIFACT_NAME="$($env:ORGANIZATION_CANONICAL_NAME.tolower())-$($env:PACKAGE_CANONICAL_NAME.tolower())-v$($env:version.tolower())-$($env:configuration.tolower())-$($env:platform.tolower())"
+      } else {
+         $env:ARTIFACT_NAME="$($env:ORGANIZATION_CANONICAL_NAME.tolower())-$($env:PACKAGE_CANONICAL_NAME.tolower())-$($env:configuration.tolower())-$($env:platform.tolower())"    
+      }
       $env:ARTIFACT_FILENAME="$($env:ARTIFACT_NAME).zip"
-      $env:DOCUMENTATION_ARTIFACT_NAME="$($env:ORGANIZATION_CANONICAL_NAME.tolower())-$($env:PACKAGE_CANONICAL_NAME.tolower())-$($env:configuration.tolower())-$($env:platform.tolower())"
+      if (Test-Path env:version) {
+        $env:DOCUMENTATION_ARTIFACT_NAME="$($env:ORGANIZATION_CANONICAL_NAME.tolower())-$($env:PACKAGE_CANONICAL_NAME.tolower())-v$($env:version.tolower())-$($env:configuration.tolower())-$($env:platform.tolower())"
+      } else {
+        $env:DOCUMENTATION_ARTIFACT_NAME="$($env:ORGANIZATION_CANONICAL_NAME.tolower())-$($env:PACKAGE_CANONICAL_NAME.tolower())-$($env:configuration.tolower())-$($env:platform.tolower())"
+      }
       $env:DOCUMENTATION_ARTIFACT_FILENAME="$($env:DOCUMENTATION_ARTIFACT_NAME).pdf"
 
 build_script:

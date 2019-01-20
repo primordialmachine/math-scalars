@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //
-// Primordial Machine's Math Scalars Library
-// Copyright (C) 2019 Michael Heilmann
+// Primordial Machine's Functors Library
+// Copyright (C) 2017-2019 Michael Heilmann
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the
@@ -25,28 +25,7 @@
 
 #pragma once
 
-#include "primordialmachine/functors/include.hpp"
-
-namespace primordialmachine {
-
-template<typename TYPE, typename ENABLED = void>
-struct is_scalar
-{
-  static constexpr bool value = false;
-}; // struct is_scalar
-
-template<typename TYPE>
-inline constexpr bool is_scalar_v = is_scalar<TYPE>::value;
-
-} // namespace primordialmachine
-
-namespace primordialmachine {
-
-// Specialization for floating point types.
-template<typename T>
-struct is_scalar<T, enable_if_t<is_floating_point_v<T>>>
-{
-  static constexpr bool value = true;
-}; // struct is_scalar
-
-} // namespace primordialmachine
+#include "primordialmachine/functors/common_type.hpp"
+#include "primordialmachine/functors/enable_if.hpp"
+#include "primordialmachine/functors/is_floating_point.hpp"
+#include "primordialmachine/functors/is_same.hpp"

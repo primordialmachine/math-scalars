@@ -38,7 +38,7 @@
 \SetLibraryStaticLibrariesDirectoryPath{primordialmachine/math/scalars/\newline\$(PlatformTarget.toLower())/\$(Configuration.toLower())/libraries}
 \SetLibraryStaticLibraryFileName{math-scalars.lib}
 
-\SetLibraryVersion{v1.0}
+\SetLibraryVersion{v1.1}
 \SetLibraryRepository{https://github.com/primordialmachine/math-scalars}
 \SetAuthor{Michael Heilmann}
 \SetEmail{michaelheilmann@primordialmachine.com}
@@ -101,19 +101,23 @@ bool operator< ( S, S );\newline
 bool operator>=( S, S );\newline
 bool operator> ( S, S );}
 
-\section{\texttt{is\_scalar} (struct)}
+\section{\texttt{is\_scalar} (struct template)}
 This template defines a compile-time boolean constant value which can be used to
 determine whether a type \texttt{TYPE} is a valid scalar type. It must        be
 specialized in order to introduce a user-defined scalar type to       Primordial
 Machine's mathemmatical libraries. Such types must satisfy the            scalar
-requirements.
+requirements.\newline
 
-\noindent\texttt{template \textlangle typename TYPE\textrangle\newline
+\texttt{template \textlangle typename TYPE, typename ENABLED = void\textrangle\newline
 struct is\_scalar \{\newline
 \hspace*{2em}static constexpr bool value = false;\newline
-\};}
+\};}\newline
 
-\noindent{}This library provides specializations for all floating point    types
+This library provides specializations for all floating point    types
 where \texttt{value} is \texttt{true}.
+
+\subsection{\texttt{is\_scalar\_v} (helper variable template)}
+\texttt{template \textlangle typename TYPE\textrangle\newline
+inline constexpr bool is\_scalar\_v = is\_scalar\textlangle TYPE \textrangle::value;}
 
 \end{document}
