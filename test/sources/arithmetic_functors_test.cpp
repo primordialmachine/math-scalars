@@ -110,18 +110,6 @@ TEST(arithmetic_functors_test, minus_assignment_functor_test)
   ASSERT_FLOAT_EQ(-1.f, x);
 }
 
-TEST(arithmetic_functors_test, star_assignment_functor_test)
-{
-  using namespace primordialmachine;
-  static_assert(true == has_star_assignment_functor_v<float, float>,
-                "star assignment functor must be available");
-  static_assert(false == has_star_assignment_functor_v<char, char>,
-                "star assignment functor must not be available");
-  float x = 2.f;
-  star_assignment(x, 3.0f);
-  ASSERT_FLOAT_EQ(6.f, x);
-}
-
 TEST(arithmetic_functors_test, slash_assignment_functor_test)
 {
   using namespace primordialmachine;
@@ -132,4 +120,26 @@ TEST(arithmetic_functors_test, slash_assignment_functor_test)
   float x = 6.f;
   slash_assignment(x, 2.0f);
   ASSERT_FLOAT_EQ(3.f, x);
+}
+
+TEST(arithmetic_functors_test, square_root_functor_test)
+{
+  using namespace primordialmachine;
+  static_assert(true == has_square_root_functor_v<float>,
+                "square root functor must be available");
+  static_assert(false == has_square_root_functor_v<char>,
+                "square root functor must not be available");
+  ASSERT_FLOAT_EQ(2.f, square_root(4.f));
+}
+
+TEST(arithmetic_functors_test, star_assignment_functor_test)
+{
+  using namespace primordialmachine;
+  static_assert(true == has_star_assignment_functor_v<float, float>,
+                "star assignment functor must be available");
+  static_assert(false == has_star_assignment_functor_v<char, char>,
+                "star assignment functor must not be available");
+  float x = 2.f;
+  star_assignment(x, 3.0f);
+  ASSERT_FLOAT_EQ(6.f, x);
 }

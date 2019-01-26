@@ -21,12 +21,14 @@ The \texttt{operator()} of these specializations are \texttt{noexcept}.
 \subsection{Unary Functors}
 \noindent{}This library provides \textit{UnaryFunctor}    specializations of the
 the functors
-\texttt{unary\_plus\_functor} and
-\texttt{unary\_minus\_functor}.
+\texttt{unary\_plus\_functor},
+\texttt{unary\_minus\_functor}, and
+\texttt{square\_root\_functor}.
 where the operand \texttt{a} is a floating point type \texttt{A}.\newline
 
-\texttt{unary\_plus\_functor} computes the affirmation \texttt{+a} and
-\texttt{unary\_minus\_functor} computes the negation \texttt{-a}.\newline
+\texttt{unary\_plus\_functor} computes the affirmation \texttt{+a},
+\texttt{unary\_minus\_functor} computes the negation \texttt{-a}, and
+\texttt{square\_root\_functor} computes the square root $\sqrt[2]{\texttt{a}}$\newline
 
 The result type \texttt{R} is \texttt{A}.
 The \texttt{operator()} of these specializations are \texttt{noexcept}.

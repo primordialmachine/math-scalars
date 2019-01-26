@@ -83,6 +83,9 @@
     <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\arithmetic_functors\include.hpp">
       <Filter>Headerdateien\floating_point\arithmetic_functors</Filter>
     </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\arithmetic_functors\square_root_functor.hpp">
+      <Filter>Headerdateien\floating_point\arithmetic_functors</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sources\primordialmachine\math\scalars\include.cpp">

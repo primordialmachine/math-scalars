@@ -25,13 +25,14 @@
 
 #pragma once
 
-#include "primordialmachine/math/scalars/floating_point/arithmetic_functors/unary_plus_functor.hpp"
-#include "primordialmachine/math/scalars/floating_point/arithmetic_functors/unary_minus_functor.hpp"
-#include "primordialmachine/math/scalars/floating_point/arithmetic_functors/binary_plus_functor.hpp"
-#include "primordialmachine/math/scalars/floating_point/arithmetic_functors/plus_assignment_functor.hpp"
 #include "primordialmachine/math/scalars/floating_point/arithmetic_functors/binary_minus_functor.hpp"
-#include "primordialmachine/math/scalars/floating_point/arithmetic_functors/minus_assignment_functor.hpp"
-#include "primordialmachine/math/scalars/floating_point/arithmetic_functors/binary_star_functor.hpp"
-#include "primordialmachine/math/scalars/floating_point/arithmetic_functors/star_assignment_functor.hpp"
+#include "primordialmachine/math/scalars/floating_point/arithmetic_functors/binary_plus_functor.hpp"
 #include "primordialmachine/math/scalars/floating_point/arithmetic_functors/binary_slash_functor.hpp"
+#include "primordialmachine/math/scalars/floating_point/arithmetic_functors/binary_star_functor.hpp"
+#include "primordialmachine/math/scalars/floating_point/arithmetic_functors/minus_assignment_functor.hpp"
+#include "primordialmachine/math/scalars/floating_point/arithmetic_functors/plus_assignment_functor.hpp"
 #include "primordialmachine/math/scalars/floating_point/arithmetic_functors/slash_assignment_functor.hpp"
+#include "primordialmachine/math/scalars/floating_point/arithmetic_functors/square_root_functor.hpp"
+#include "primordialmachine/math/scalars/floating_point/arithmetic_functors/star_assignment_functor.hpp"
+#include "primordialmachine/math/scalars/floating_point/arithmetic_functors/unary_minus_functor.hpp"
+#include "primordialmachine/math/scalars/floating_point/arithmetic_functors/unary_plus_functor.hpp"
