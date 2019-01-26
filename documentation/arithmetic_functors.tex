@@ -1,0 +1,50 @@
+\section{Integration of Primordial Machine's Arithmetic Functors   library}
+
+\subsection{Binary Functors}
+\noindent{}This library provides \textit{BinaryFunctor}    specializations of the
+the functors
+\texttt{binary\_plus\_functor},
+\texttt{binary\_minus\_functor},
+\texttt{binary\_star\_functor}, and
+\texttt{binary\_slash\_functor}
+where the left operand \texttt{a} and right operand \texttt{b} are floating point
+types \texttt{A} and \texttt{B}.\newline
+
+\texttt{binary\_plus\_functor} computes the sum \texttt{a + b},
+\texttt{binary\_minus\_functor} computes the difference \texttt{a - b},
+\texttt{binary\_star\_functor} computes the product \texttt{a * b},
+\texttt{binary\_slash\_functor} computes the quotient \texttt{a / b}.\newline
+
+The result type \texttt{R} is \texttt{common\_type\textlangle A, B\textrangle}.
+The \texttt{operator()} of these specializations are \texttt{noexcept}.
+
+\subsection{Unary Functors}
+\noindent{}This library provides \textit{UnaryFunctor}    specializations of the
+the functors
+\texttt{unary\_plus\_functor} and
+\texttt{unary\_minus\_functor}.
+where the operand \texttt{a} is a floating point type \texttt{A}.\newline
+
+\texttt{unary\_plus\_functor} computes the affirmation \texttt{+a} and
+\texttt{unary\_minus\_functor} computes the negation \texttt{-a}.\newline
+
+The result type \texttt{R} is \texttt{A}.
+The \texttt{operator()} of these specializations are \texttt{noexcept}.
+
+\subsection{Compound Binary Functors}
+\noindent{}This library provides \textit{CompoundAssignmentFunctor}    specializations of the
+the functors
+\texttt{plus\_assignment\_functor},
+\texttt{minus\_assignment\_functor},
+\texttt{star\_assignment\_functor}, and
+\texttt{slash\_assignment\_functor}
+where the left operand \texttt{a} and right operand \texttt{b} are floating point
+types \texttt{A} and \texttt{B}.\newline
+
+\texttt{binary\_plus\_functor} computes the sum \texttt{a + b} and assigns the result to \texttt{a},
+\texttt{binary\_minus\_functor} computes the difference \texttt{a - b} and assigns the result to \texttt{a},
+\texttt{binary\_star\_functor} computes the product \texttt{a * b} and assigns the result to \texttt{a},
+\texttt{binary\_slash\_functor} computes the quotient \texttt{a / b} and assigns the result to \texttt{a}.\newline
+
+The result type \texttt{R} is \texttt{common\_type\textlangle A, B\textrangle}.
+The \texttt{operator()} of these specializations are \texttt{noexcept}.

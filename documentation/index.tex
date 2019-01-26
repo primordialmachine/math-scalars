@@ -38,7 +38,7 @@
 \SetLibraryStaticLibrariesDirectoryPath{primordialmachine/math/scalars/\newline\$(PlatformTarget.toLower())/\$(Configuration.toLower())/libraries}
 \SetLibraryStaticLibraryFileName{math-scalars.lib}
 
-\SetLibraryVersion{v1.1}
+\SetLibraryVersion{v1.2}
 \SetLibraryRepository{https://github.com/primordialmachine/math-scalars}
 \SetAuthor{Michael Heilmann}
 \SetEmail{michaelheilmann@primordialmachine.com}
@@ -113,11 +113,14 @@ struct is\_scalar \{\newline
 \hspace*{2em}static constexpr bool value = false;\newline
 \};}\newline
 
-This library provides specializations for all floating point    types
+This library provides specializations for all floating point types
 where \texttt{value} is \texttt{true}.
 
 \subsection{\texttt{is\_scalar\_v} (helper variable template)}
 \texttt{template \textlangle typename TYPE\textrangle\newline
 inline constexpr bool is\_scalar\_v = is\_scalar\textlangle TYPE \textrangle::value;}
+
+\input{arithmetic_functors}
+\input{relational_functors}
 
 \end{document}

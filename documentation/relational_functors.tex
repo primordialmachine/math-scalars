@@ -1,0 +1,22 @@
+\section{Integration of Primordial Machine's Relational Functors library}
+
+\noindent{}This library provides \textit{BinaryFunctor}    specializations of the
+the functors
+\texttt{equal\_to\_functor},
+\texttt{not\_equal\_to\_functor},
+\texttt{lower\_than\_functor},
+\texttt{lower\_than\_or\_equal\_to\_functor},
+\texttt{greater\_than\_functor}, and
+\texttt{greater\_than\_or\_equal\_to\_functor}.
+where the left operand \texttt{a} and right operand \texttt{b} are floating point
+types \texttt{A} and \texttt{B}.\newline
+
+\texttt{equal\_to\_functor} computes the equal relation \texttt{a == b},
+\texttt{not\_equal\_to\_functor} computes the not equal relation \texttt{a != b},
+\texttt{lower\_than\_functor} computes the lower than relation \texttt{a < b},
+\texttt{lower\_than\_or\_equal\_to\_functor} computes the lower than or equal to relation \texttt{a <= b},
+\texttt{greater\_than\_functor} computes the lower than relation \texttt{a > b}, and
+\texttt{greater\_than\_or\_equal\_to\_functor} computes the lower than or equal to relation \texttt{a >= b}.\newline
+
+The result type \texttt{R} is \texttt{bool}.
+The \texttt{operator()} of these specializations are \texttt{noexcept}.

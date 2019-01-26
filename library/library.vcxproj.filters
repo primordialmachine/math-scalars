@@ -9,6 +9,15 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="Headerdateien\floating_point">
+      <UniqueIdentifier>{c6e3f6f8-b9e0-4588-8765-d8927613d9dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\floating_point\arithmetic_functors">
+      <UniqueIdentifier>{c49e10d1-d50d-48c5-b888-bc0a3dceb401}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\floating_point\relational_functors">
+      <UniqueIdentifier>{6414a96f-b3ef-4034-b578-30474439e9fd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="package.props" />
@@ -19,6 +28,60 @@
     </ClInclude>
     <ClInclude Include="includes\primordialmachine\math\scalars\include.hpp">
       <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\relational_functors\equal_to_functor.hpp">
+      <Filter>Headerdateien\floating_point\relational_functors</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\relational_functors\greater_than_functor.hpp">
+      <Filter>Headerdateien\floating_point\relational_functors</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\relational_functors\greater_than_or_equal_to_functor.hpp">
+      <Filter>Headerdateien\floating_point\relational_functors</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\relational_functors\include.hpp">
+      <Filter>Headerdateien\floating_point\relational_functors</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\relational_functors\lower_than_functor.hpp">
+      <Filter>Headerdateien\floating_point\relational_functors</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\relational_functors\lower_than_or_equal_to_functor.hpp">
+      <Filter>Headerdateien\floating_point\relational_functors</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\relational_functors\not_equal_to_functor.hpp">
+      <Filter>Headerdateien\floating_point\relational_functors</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\arithmetic_functors\binary_minus_functor.hpp">
+      <Filter>Headerdateien\floating_point\arithmetic_functors</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\arithmetic_functors\binary_plus_functor.hpp">
+      <Filter>Headerdateien\floating_point\arithmetic_functors</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\arithmetic_functors\binary_slash_functor.hpp">
+      <Filter>Headerdateien\floating_point\arithmetic_functors</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\arithmetic_functors\binary_star_functor.hpp">
+      <Filter>Headerdateien\floating_point\arithmetic_functors</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\arithmetic_functors\minus_assignment_functor.hpp">
+      <Filter>Headerdateien\floating_point\arithmetic_functors</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\arithmetic_functors\plus_assignment_functor.hpp">
+      <Filter>Headerdateien\floating_point\arithmetic_functors</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\arithmetic_functors\slash_assignment_functor.hpp">
+      <Filter>Headerdateien\floating_point\arithmetic_functors</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\arithmetic_functors\star_assignment_functor.hpp">
+      <Filter>Headerdateien\floating_point\arithmetic_functors</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\arithmetic_functors\unary_minus_functor.hpp">
+      <Filter>Headerdateien\floating_point\arithmetic_functors</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\arithmetic_functors\unary_plus_functor.hpp">
+      <Filter>Headerdateien\floating_point\arithmetic_functors</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\primordialmachine\math\scalars\floating_point\arithmetic_functors\include.hpp">
+      <Filter>Headerdateien\floating_point\arithmetic_functors</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
