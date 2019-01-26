@@ -36,6 +36,7 @@ struct unary_minus_functor<OPERAND,
 {
   using operand_type = OPERAND;
   using result_type = OPERAND;
+  static constexpr size_t arity = 1;
   result_type operator()(operand_type x) const noexcept(noexcept(-x))
   {
     return -x;

@@ -41,6 +41,7 @@ struct slash_assignment_functor<
   using left_operand_type = LEFT_OPERAND;
   using right_operand_type = RIGHT_OPERAND;
   using result_type = LEFT_OPERAND;
+  static constexpr size_t arity = 2;
   result_type& operator()(left_operand_type& left_operand,
                           const right_operand_type& right_operand) const
     noexcept(noexcept(left_operand = left_operand / right_operand))

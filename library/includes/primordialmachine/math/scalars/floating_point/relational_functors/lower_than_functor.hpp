@@ -39,6 +39,7 @@ struct lower_than_functor<LEFT_OPERAND,
   using left_operand_type = LEFT_OPERAND;
   using right_operand_type = RIGHT_OPERAND;
   using result_type = bool;
+  static constexpr size_t arity = 2;
   auto operator()(LEFT_OPERAND x, RIGHT_OPERAND y) const
     noexcept(noexcept(x < y))
   {

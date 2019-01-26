@@ -37,6 +37,7 @@ struct square_root_functor<
 {
   using operand_type = OPERAND;
   using result_type = OPERAND;
+  static constexpr size_t arity = 1;
   result_type operator()(const operand_type& operand) const
     noexcept(noexcept(std::sqrt(operand)))
   {

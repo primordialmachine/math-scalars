@@ -39,6 +39,7 @@ struct binary_minus_functor<LEFT_OPERAND,
   using left_operand_type = LEFT_OPERAND;
   using right_operand_type = RIGHT_OPERAND;
   using result_type = common_type_t<left_operand_type, right_operand_type>;
+  static constexpr size_t arity = 2;
   result_type operator()(left_operand_type x, right_operand_type y) const
     noexcept(noexcept(x - y))
   {
