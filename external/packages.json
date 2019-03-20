@@ -1,0 +1,8 @@
+[
+  { name : 'arithmetic-functors', version : null },
+  { name : 'byte-orders', version : null },
+  { name : 'errors', version : null },
+  { name : 'functors', version : null },
+  { name : 'one-zero-functors', version : null },
+  { name : 'relational-functors', version : null }
+]
